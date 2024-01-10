@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/Imagen.PNG/logo.png" type="image/x-icon">
+
+</head>
+<body onload="mostrarDur()">
+   <!-- NAVEGADOR -->
+    <nav class="nav">
+        <!-- aca va a ir el logo animado -->
+        <ul class="ul-nav">
+        
+        <li class="li-nav">
+               <a href="/historia.html" class="link-nav">HISTORIA</a>
+          </li>
+
+          <li class="li-nav">
+              <a href="/jugar.html" class="link-nav">JUGUEMOS</a> 
+          </li>  
+         </ul>
+        
+
+    </nav>
+
+ <!-- HEADER -->
+ <header class="header">
+  <h1 class="header-title">HISTORIA DE LA PROGRAMACION</h1>
+</header>
+
+<!-- MAIN -->
+<main class="main-historia">
+  <!-- 1 -->
+  <div class="first">
+    <h2 class="title-main-historia">El principio de la historia de la programación</h2>
+    <p class="pararaph-main-historia">El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p>
+  </div>
+<!-- 2 -->
+  <div class="second">
+    <p class="pararaph-main-historia">Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
+      Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente..</p>
+    <h2 class="title-main-historia">Lenguaje de ensamblaje</h2>
+  </div>
+  <!-- 3 -->
+  <div class="third">
+    <h2 class="title-main-historia">Los primeros lenguajes de programación</h2>
+    
+
+      <p class="pararaph-main-historia p-third">FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.
+        <br>
+      
+        En 1959 se desarrollo Cobol, que está detrás de la mayoría de los sistemas de transacciones de negocio de los procesos de las tarjetas de crédito, ATMs (Modo de Transferencia Asíncrona), telefonía, sistemas hospitalarios, gobierno, sistemas automatizados y señales de tráfico.
+        El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje famipar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense
+        <br>
+        En 1964 se creo Basic, que fue diseñado como un lenguaje simppficado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos.
+        <br>
+        Entre 1969 y 1973 se crea C,a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».
+        <br>
+        En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader
+        Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia</p>
+    
+  </div>
+  
+
+</main>
+
+<!-- VIDEO -->
+<h2 class="title-video">Un breve video para complementar lo visto</h2>
+<section class="video">
+  <video id="video" class="video-mp4" poster="./Imagen/drive-download-20231213T233502Z-001/img-video.jpg">
+    <source src="./Video/historia-Comp.mp4" type="video/mp4">
+    <source src="./Video/historia-Comp.ogv" type="video/ogg">
+  </video>
+  <!-- NAV CONTROLS -->
+  <nav class="nav-video">
+    <div class="botonera">
+      <button class="boton-controls" id="play" onclick="clickPlay()">
+        <img src="./Imagen.svg/play.svg" alt="play" class="imgPlay">
+      </button>
+      <button class="boton-controls" id="pause" onclick="clickPause()">
+        <img src="Imagen.svg/pausa.svg" alt="pause" class="imgPause">
+      </button>
+      <button class="boton-muted">
+      <p id="mute" class="mute" onclick="muted()" >Mute</p>
+      </button>
+
+    </div>
+    <div class="p.control" id="timeVideo">
+      <p id="timeVideo">
+        <span id="tiempoReal">00:00</span>/
+        <spam id="duracion"></spam>
+      </p>
+    </div>
+  </nav>
+  
+  
+</section>
+
+ <!-- FOOTER -->
+ <footer class="footer">
+  <div class="first-footer">
+
+      <img class="img-footer" src="/Imagen.PNG/logo.png" alt="Picos">
+      <h3 class="title-footer">PROGRAMACION E HISTORIA</h3>
+  </div>
+   <p class="paragraph-footer">Sitio creado por Gabriel A. Lucas</p>
+</footer>
+  <script src="/javaScript.js"></script>  
+</body>
+
+</html>

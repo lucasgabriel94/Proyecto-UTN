@@ -1,0 +1,344 @@
+:root {
+    --back-color-main: #181D31;
+    --back-color-main2: #E6DDC4;
+    --shadow-color: #678983;
+    --border-color: gray;
+    --svg-color:  #495579;
+    --svg-color2:  #F0E9D2;
+    --paragraph-color: #E6DDC4;
+    --title-color: #678983;
+    --main-color-text: #EEEEEE;
+    --black-shadow-text: black;
+    --gray-shadow-gray: gray;
+    --font-family: 'Poppins', sans-serif;
+
+
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    background-color: var(--back-color-main);
+    font-size: 14px;
+    
+}
+
+/* NAVEGADOR */
+
+.ul-nav{
+    display: flex;
+    justify-content: end;
+}
+.li-nav{
+    list-style: none;
+    
+}
+
+.link-nav{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: var(--paragraph-color);
+    color: var(--black-shadow-text);
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: var(--title-color) 3px 4px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.link-nav:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(2px)
+  }
+
+/* HEADER */
+.header{
+    background-image:url(/Imagen/closeup-computer-display-software-developer-typing-database-functions-script-it-startup-agency-display-concept-programer-writing-source-code-scrolling-text-programming-language.jpg);
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 0% 35%;
+    padding: 10px;
+
+    
+}
+.header-title{
+    font-size: 60px;
+    color: var(--main-color-text);
+    text-shadow: 2px 2px gray, 6px 6px black
+
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px 0px 200px;
+    color: var(--title-color);
+}
+/* MAIN */
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 200px;
+    
+ 
+    
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 6px solid var(--shadow-color);
+    background-color: var(--paragraph-color);
+    
+   
+
+}
+
+.paragraph-card{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.img-card{
+    width: 100%;
+    padding: 15px;
+}
+
+.btn-card{
+    background-color: var(--back-color-main);
+    color: var(--main-color-text);
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-color) 3px 3px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer{ 
+    background-color: var(--shadow-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.first-footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 60px;
+
+}
+.img-footer{
+    width: 120px;
+    margin-right: 10px;
+}
+
+.title-footer{
+    font-size: 14px;
+    width: 75px;
+    text-align: center;
+   
+}
+
+.paragraph-footer{
+    font-size: 16px;
+}
+
+/* ------------------------------------ */
+
+/* HISTORIA */
+
+.main-historia{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 40px;
+   
+}
+.title-main-historia{
+    color: var(--title-color);
+    font-size: 40px;
+
+}
+
+.pararaph-main-historia{
+    color: var(--paragraph-color);
+    font-size: 16px;
+}
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    
+}
+
+.second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    
+   
+}
+
+.third{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    
+
+}
+
+.pararaph-main-historia{
+    text-align: center;
+    width: 45%;
+    line-height: 1.4;
+}
+
+/* VIDEO */
+
+.title-video{
+    text-align: center;
+    font-size: 28px;
+    color: var(--title-color);
+}
+
+.video{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+
+
+.nav-video{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.p.control{
+    display: flex;
+    
+    
+}
+
+/* NAV CONTROLS */
+
+.boton-controls{
+    width: 80px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    background-color: var(--paragraph-color);
+    box-shadow: gray 2px 2px;
+    cursor: pointer;
+    
+}
+
+.boton-muted{
+    background-color: var(--paragraph-color);
+    box-shadow: gray 2px 2px;
+    cursor: pointer;
+    padding: 0px 5px;
+    border-radius: 10px;
+    height: 50%;
+    margin: 20px 0px;
+    
+   
+    
+    
+}
+
+
+/* -------------------------------------- */
+/* JUGAR */
+
+.title-jugar{
+    text-align: center;
+    font-size: 40px;
+    color:var(--title-color);
+}
+
+/* MAIN */
+
+.main-jugar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    
+}
+
+.img-juego{
+    width: 270px;
+    height: 400px;
+    background-color: gray;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: var(--paragraph-color);
+}
+
+.img-juego:hover{
+    background-color: #1d1d1d;
+}
+
+.img-movibles{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1, #img2, #img3 {
+width: 270px;
+height: 400px;
+margin: 0px 3px;
+}
+
+/* BOTON */
+.btn-jugar{
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    margin-top: 30px;
+    margin-bottom:90px;
+    border-radius: 10px;
+    background-color: var(--back-color-main2);
+    box-shadow: var(--shadow-color) 2px 3px;
+}
