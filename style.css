@@ -27,12 +27,24 @@ body {
 
 /* NAVEGADOR */
 
-.ul-nav{
+.nav{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    
 }
+
+.ul-nav{
+     display: flex;
+    
+   
+}
+
 .li-nav{
     list-style: none;
+    display: flex;
+    
+    align-items: center;
     
 }
 
@@ -52,6 +64,60 @@ body {
 .link-nav:active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transform: translateX(2px)
+  }
+
+  /* SVG */
+  
+.rectInt{
+    animation:  mover 1s 1;
+    animation-fill-mode: backwards;
+    
+
+}
+
+@keyframes mover {
+    0%{
+        transform: translate(0px, -3px);
+    }
+    50%{
+        transform: translate(0px, 3px);
+    }
+
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+.lineInt{
+  animation: opacidad 1s 1;  
+}
+
+@keyframes opacidad {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }  
+    100%{
+        opacity: 100%;
+    }  
+    }
+
+  .div-svg{
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+
+  .svg{
+    margin: 0px;
+    padding: 0px;
+    
   }
 
 /* HEADER */

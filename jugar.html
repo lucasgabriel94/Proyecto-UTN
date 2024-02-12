@@ -10,7 +10,26 @@
 <body>
       <!-- NAVEGADOR -->
     <nav class="nav">
-        <!-- aca va a ir el logo animado -->
+        <div class="div-svg">
+        
+            <svg style="width: 115px; height: 100px;">
+                
+                <rect class="rectExt" x="5" y="5" width="75" height="50" fill="#F0E9D2" stroke="#495579" strokewidth="10" rx="10" ></rect>
+                <rect class="rectInt" x="15" y="15" width="55" height="30" fill="#495579" stroke="#495579" stroke-width="10" rx="8"></rect>
+               
+                <line x1="10" y1="65" x2="75" y2="65" stroke="#F0E9D2" stroke-width="4" stroke-linecap="round"></line>
+               <line x1="2" y1="100" x2="90" y2="100" stroke="#F0E9D2" stroke-width="4" stroke-linecap="round"></line>
+               <line x1="0" y1="100" x2="10" y2="65" stroke="#F0E9D2" stroke-width="4" stroke-linecap="round"></line>   
+               <line x1="75" y1="65" x2="90" y2="100" stroke="#F0E9D2" stroke-width="4" stroke-linecap="round"></line>             
+               
+               <line class="lineInt" x1="15" y1="70" x2="70" y2="70" stroke="#495579" stroke-width="4" stroke-linecap="round"  fill="black"></line>
+               <line class="lineInt" x1="7" y1="95" x2="82" y2="95" stroke="#495579"  fill="black" stroke-width="4" stroke-linecap="round" ></line>
+               <line class="lineInt" x1="7" y1="95" x2="15" y2="70" stroke="#495579"  fill="black" stroke-width="4" stroke-linecap="round" ></line>   
+               <line class="lineInt" x1="82" y1="95" x2="72" y2="70" stroke="#495579"  fill="black" stroke-width="4" stroke-linecap="round" ></line>   
+               
+        
+            </svg>
+            </div>      
         <ul class="ul-nav">
         
         <li class="li-nav">
@@ -33,23 +52,26 @@
     <main>
         <!-- IMAGANES -->
         <section class="main-jugar">
-            <div class="img-juego">
-                <p class="paragraph-juego">Arrastre y suelte la imagen aquí</p>
+            <div id="imgJuego" class="img-juego primera" draggable="true" ondragover="soltar(event)"  ondrop="dropear(event)">
+                <p id="parrafo" class="paragraph-juego">Arrastre y suelte la imagen aquí</p>
             </div>
-            <div class="img-juego">
-                <p class="paragraph-juego">Arrastre y suelte la imagen aquí</p>
+            <div id="imgJuego" class="img-juego segunda" draggable="true"  ondragover="soltar(event)" ondrop="dropear(event)">
+                <p id="parrafo" class="paragraph-juego">Arrastre y suelte la imagen aquí</p>
             </div>
 
-            <div class="img-juego">
-                <p class="paragraph-juego">Arrastre y suelte la imagen aquí</p>
+            <div id="imgJuego" class="img-juego" draggable="true"  ondragover="soltar(event)" ondrop="dropear(event)">
+                <p id="parrafo" class="paragraph-juego">Arrastre y suelte la imagen aquí</p>
             </div>
         </section>
 
-        <section class="img-movibles">
-        <img id="img1" src="./Imagen.PNG/rompe2.png" alt="imagen" class="img-mov">
-        <img id="img2" src="./Imagen.PNG/rompe1.png" alt="imagen" class="img-mov">
-        <img id="img3" src="./Imagen.PNG/Rompe3.png" alt="imagen" class="img-mov">
+        <section class="img-movibles" >
+            <div class="img-juego">
+        <img id="img1"  src="./Imagen.PNG/rompe2.png" ondragstart="inicio(event)" alt="imagen" class="img-mov">
+        <img id="img1" src="./Imagen.PNG/rompe1.png" ondragstart="inicio(event)" alt="imagen" class="img-mov">
+        <img id="img1" src="./Imagen.PNG/Rompe3.png" ondragstart="inicio(event)" alt="imagen" class="img-mov">
         </section>
+       
+      
 
         <button class="btn-jugar">Reiniciar</button>
     </main>

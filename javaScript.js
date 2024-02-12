@@ -51,3 +51,47 @@ const clickPlay=()=>{
 };
 
 
+// JUEGO
+let imagen= document.querySelectorAll("#img1");
+let juego = document.querySelectorAll("#imgJuego")
+let primera = document.querySelector(".primera");
+let segunda = document.querySelector(".segunda");
+
+console.log(segunda);
+
+
+console.log(juego);
+console.log(parrafo);
+ 
+
+
+inicio=(e)=>{
+    
+    let contenido = (e.target.id);
+    console.log(e.target);
+    e.dataTransfer.setData("Text",contenido);
+   
+    console.log("se inicio el arrastre");
+}
+
+soltar=(e)=>{
+    e.preventDefault();
+    
+}
+
+dropear=(e)=>{
+    let id = e.dataTransfer.getData("Text");
+    let elemento = document.querySelector("#"+ id)
+    primera.innerHTML = elemento.outerHTML;
+
+    elemento.style.display= "none";
+
+
+    console.log("se termino")
+   
+}
+
+
+
+
+
